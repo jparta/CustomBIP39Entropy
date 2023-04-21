@@ -2,4 +2,4 @@
 .idea
 
 # Outputs
-gen_file.txt
+phrases.json

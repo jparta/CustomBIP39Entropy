@@ -84,10 +84,9 @@ def main():
     randomized_bits_count, _ = get_bitcounts(mnemonic_word_count)
     find_entropy(customizer_phrase, wordlist, randomized_bits_count)
 
-    # TODO: rename to phrases.txt
-    gen_file = "gen_file.txt"
-    with open(gen_file, 'w') as f:
-        pprint(recovery_phrases, stream=f, width=256)
+    phrases_file = "phrases.json"
+    with open(phrases_file, 'w') as f:
+        json.dump(recovery_phrases, f, indent=4)
         for recovery_phrase in recovery_phrases:
             words = recovery_phrase.split()
             # Align words
