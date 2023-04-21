@@ -75,6 +75,6 @@ def generate_words(customizer_phrase):
 gen_file = "gen_file.txt"
 with open(gen_file, 'w') as f:
     n = 10
-    customizer_phrase = "julmetunvehje"
+    customizer_phrase = "fungible"
     recovery_phrase = [generate_words(customizer_phrase) for _ in range(n)]
     pprint(recovery_phrase, stream=f, width=256)
