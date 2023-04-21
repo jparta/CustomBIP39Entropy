@@ -1,1 +1,5 @@
+# IDE
 .idea
+
+# Outputs
+gen_file.txt
